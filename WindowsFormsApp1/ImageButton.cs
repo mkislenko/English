@@ -1,20 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace English
 {
-    public partial class Form1 : Form
+    public partial class ImageButton : UserControl
     {
-        public Form1()
+        
+        private Image content;
+
+        public ImageButton()
         {
             InitializeComponent();
+        }
+
+        private void ImageButton_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

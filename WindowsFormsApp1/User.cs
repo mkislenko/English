@@ -4,17 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1
+namespace English
 {
     public class User
     {
-        public string name;
+        private string _name;
+        
+        public string Name
+        {
+            get { return _name; }
+        }
 
-        public List<string> results;
+        private List<string> results;
 
         public User(string name)
         {
+            _name = name;
+            results = new List<string>();
+        }
 
+        public void AddResult(string s)
+        {
+            results.Add(s);
+            results.Sort();
+        }
+
+        public List<string> GetResults()
+        {
+            return results;
         }
     }
 }
